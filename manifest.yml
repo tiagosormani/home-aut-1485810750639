@@ -1,0 +1,16 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: home-aut
+  host: home-aut
+  disk_quota: 1024M
+  services:
+  - home-aut-cloudantNoSQLDB
+  - Plataforma Internet das Coisas-p3
+  - availability-monitoring-auto
+  - Mobile Client Access-homeaut
+  env:
+    NODE_RED_USERNAME: tiagosormani
+    NODE_RED_PASSWORD: nodered234869
